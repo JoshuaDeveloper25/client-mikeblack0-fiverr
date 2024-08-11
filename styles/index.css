@@ -82,6 +82,14 @@ body {
   color: var(--primary-dark);
 }
 
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .d-inline {
   display: inline;
 }
@@ -214,15 +222,106 @@ body {
   width: 125rem;
 }
 
+/* The future is now */
+.future-alignment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 8rem 0;
+}
+
+.future-content {
+  max-width: 50rem;
+}
+
+.future-content-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* The react frame for production */
+.reactframework {
+  background-image: radial-gradient(
+    circle farthest-corner at 50% 0%,
+    rgba(98, 53, 208, 0.5),
+    #000 45%
+  );
+  text-align: center;
+  padding: 13rem 0;
+}
+
+.reactframework-title {
+  font-size: 10.5rem;
+  line-height: 1;
+}
+
+.reactframework-subtitle {
+  font-size: 1.8rem;
+  margin: 3rem 0;
+}
+
+.reactframework-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* The Web SDK */
+.web {
+  padding: 4rem 20rem;
+}
+
+.web-title {
+  text-align: center;
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.web-subtitle {
+  text-align: center;
+  max-width: 37rem;
+  font-size: 1.8rem;
+  margin: 3rem auto;
+}
+
+.web-features {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.web-feature {
+  max-width: 30rem;
+}
+
+.web-feature-desc {
+    margin-top: 1rem;
+}
+
+.web-aditional {
+  margin: 1.8rem 0;
+  font-size: 1.3rem;
+}
+
 /* Medias Queryes */
 /* 990px */
 @media (max-width: 61.875em) {
+  .future-alignment {
+    flex-direction: column;
+    align-items: start;
+  }
+
   .navbar-li {
     display: none;
   }
-  
+
   .header-title {
     font-size: 6rem;
+  }
+
+  .reactframework-title {
+    font-size: 5rem;
   }
 }
 
@@ -233,8 +332,10 @@ body {
     display: block;
   }
 
-  .navbar-alignment {
+  .navbar-alignment,
+  .reactframework-buttons {
     flex-direction: column;
+    gap: 1.4rem;
   }
 
   .header-buttons {
