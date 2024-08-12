@@ -76,7 +76,7 @@
     </header>
 
     <!-- Features Cards 1  -->
-    <section class="container-page">
+    <section id="speed" class="container-page">
       <div class="feature-card1-grid">
         <div class="card1 card1-1">
           <img
@@ -92,7 +92,7 @@
           <div class="btn btn-primary">Get started</div>
         </div>
 
-        <div class="card1 card1-2">
+        <div class="card1 card1-2 sm-hidden">
           <img
             class="card1-keyboard-img mb-3"
             src="assets/img/keyboard.png"
@@ -137,6 +137,20 @@
             decoding="async"
           />
         </div>
+
+        <div class="card1 card1-2 sm-block">
+          <img
+            class="card1-keyboard-img mb-3"
+            src="assets/img/keyboard.png"
+            loading="lazy"
+            decoding="async"
+          />
+          <h2 class="text-center c-white">What is it all about?</h2>
+          <p class="c-secondary my-3">
+            Things involving crypto, NFTs, and web3 in general are extremely
+            intriguing.
+          </p>
+        </div>
       </div>
 
       <!-- Features Cards 2  -->
@@ -166,7 +180,7 @@
 
         <div class="card2 card2-3">
           <img
-            class="card1-trophy-img mb-3"
+            class="card2-features-img mb-3"
             src="assets/img/likes.png"
             loading="lazy"
             decoding="async"
@@ -181,10 +195,12 @@
           </div>
         </div>
 
-        <div class="card2 card2-4 p-3">
+        <div class="sm-hidden card2 card2-4 p-3">
           <div>
-            <h2 class="c-secondary fs-biggest">5G</h2>
-            <h2 class="text-center c-white my-3">Get your credentials</h2>
+            <h2 class="c-secondary crendentials-card">5G</h2>
+            <h3 class="text-center fs-medium c-white my-3">
+              Get your <span class="d-block">credentials</span>
+            </h3>
             <p class="c-secondary">
               To start integrating, hit the Get API key button below and contact
               us.
@@ -205,6 +221,19 @@
             </h2>
             <p class="c-secondary">
               After embedding the snippet, you can easily customize it.
+            </p>
+          </div>
+        </div>
+
+        <div class="sm-block card2 card2-4 p-3">
+          <div>
+            <h2 class="c-secondary crendentials-card">5G</h2>
+            <h3 class="text-center fs-medium c-white my-3">
+              Get your <span class="d-block">credentials</span>
+            </h3>
+            <p class="c-secondary">
+              To start integrating, hit the Get API key button below and contact
+              us.
             </p>
           </div>
         </div>
@@ -270,7 +299,7 @@
           </div>
         </div>
 
-        <div class="card3 card3-2 p-3">
+        <div class="md-hidden card3 card3-2 p-3">
           <img
             class="mx-auto mb-3"
             src="assets/img/editing-video.png"
@@ -308,7 +337,7 @@
         <div class="card3 card3-4">
           <div class="p-3 text-center">
             <h2 class="fs-normal c-white my-3">
-              Manage and monetize IP in unprecedented ways.
+              Manage and monetize IP in <span class="d-block">unprecedented ways.</span>
             </h2>
             <p class="c-secondary">
               Iindestructible, 100% controlled, and infinitely scalable.
@@ -321,6 +350,25 @@
             decoding="async"
             class="w-full"
           />
+        </div>
+
+        <div class="md-block text-center card3 card3-2 p-3">
+          <img
+            class="mx-auto mb-3"
+            src="assets/img/editing-video.png"
+            loading="lazy"
+            decoding="async"
+            width="250"
+          />
+          <div class="text-center">
+            <h2 class="fs-normal text-center c-white">
+              Manage and monetize IP in
+              <span class="d-block">unprecedented ways.</span>
+            </h2>
+            <p class="c-secondary my-3">
+              indestructible, 100% controlled, and infinitely scalable.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -337,7 +385,9 @@
             </p>
           </div>
 
-          <button type="button" class="btn btn-dark">Get Started</button>
+          <div>
+            <button type="button" class="btn btn-dark">Get Started</button>
+          </div>
         </div>
       </div>
     </section>
@@ -365,7 +415,7 @@
     </section>
 
     <!-- The Web SDK -->
-    <section>
+    <section id="features">
       <div class="container-page">
         <h1 class="web-title c-white">The Web SDK</h1>
         <p class="web-subtitle c-secondary">
