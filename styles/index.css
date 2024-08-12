@@ -290,7 +290,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
-  margin: 0 0 8rem 0;
+  margin: 8rem 0 8rem 0;
 }
 
 .future-content {
