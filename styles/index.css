@@ -102,6 +102,10 @@ body {
   display: inline-block;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .c-primary {
   color: var(--primary);
 }
@@ -268,10 +272,6 @@ body {
 }
 
 /* The Web SDK */
-.web {
-  padding: 4rem 20rem;
-}
-
 .web-title {
   text-align: center;
   font-size: 6rem;
@@ -286,17 +286,25 @@ body {
 }
 
 .web-features {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-auto-rows: 200px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
 }
 
 .web-feature {
-  max-width: 30rem;
+  background: var(--tertiary);
+  border: 1px solid var(--tertiary-light);
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 2rem;
+}
+
+.web-feature-title {
+  margin-bottom: 2rem;
 }
 
 .web-feature-desc {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .web-aditional {
@@ -304,12 +312,73 @@ body {
   font-size: 1.3rem;
 }
 
+/* Footer */
+.footer {
+  position: relative;
+  border-top: 1px solid var(--secondary);
+  margin-top: 5rem;
+  background-image: radial-gradient(
+    circle farthest-corner at 70% 100%,
+    rgba(73, 40, 156, 0.8) 11%,
+    #000 35%
+  );
+  z-index: 10;
+  overflow: hidden;
+}
+
+.footer-alignment {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  color: var(--secondary);
+  padding: 9rem 0;
+}
+
+.footer-left-gradient {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  bottom: 0%;
+  z-index: -15;
+  width: 40rem;
+}
+
+.footer-title {
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.footer-copyright,
+.footer-link {
+  font-size: 1.4rem;
+}
+
+.footer-li:not(:last-of-type) {
+  margin-right: 2.5rem;
+}
+
+.footer-link {
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.footer-link:hover {
+  color: var(--primary);
+}
+
 /* Medias Queryes */
 /* 990px */
 @media (max-width: 61.875em) {
-  .future-alignment {
+  .footer-alignment {
     flex-direction: column;
     align-items: start;
+  }
+
+  .footer-copyright {
+    align-self: center;
+    text-align: center;
+    margin-top: 2rem;
   }
 
   .navbar-li {
@@ -336,6 +405,10 @@ body {
   .reactframework-buttons {
     flex-direction: column;
     gap: 1.4rem;
+  }
+
+  .footer-li {
+    display: block;
   }
 
   .header-buttons {
